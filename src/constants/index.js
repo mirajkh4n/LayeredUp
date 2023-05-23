@@ -1,2 +1,2 @@
-import them, {COLORS, SIZES, FONTS} from './theme';
-export {them, COLORS, SIZES, FONTS};
+import theme, {COLORS, SIZES, FONTS} from './theme';
+export {theme, COLORS, SIZES, FONTS};

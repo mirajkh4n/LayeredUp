@@ -1,14 +1,19 @@
-import {StyleSheet, Text, View} from 'react-native';
-import React from 'react';
+import React from "react";
+import { StyleSheet, Text } from "react-native";
+import { COLORS, FONTS } from "../../constants";
 
-const Custometext = () => {
+const CustomText = ({ style, text, numberOfLines }) => {
   return (
-    <View>
-      <Text>Custometext</Text>
-    </View>
+    <Text numberOfLines={numberOfLines} style={[styles.text, style]}>
+      {text}
+    </Text>
   );
 };
+const styles = StyleSheet.create({
+  text: {
+    ...FONTS.Regular10,
+    color: COLORS.black,
+  },
+});
 
-export default Custometext;
-
-const styles = StyleSheet.create({});
+export default CustomText;
