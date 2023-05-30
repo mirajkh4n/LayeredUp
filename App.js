@@ -1,13 +1,17 @@
 import React, {useEffect} from 'react';
 import SplashScreen from 'react-native-splash-screen';
-import Login from './src/screens/Login';
-import AuthStack from './src/navigation/authStack';
+import {AuthProvider} from './src/navigation/AuthProvider';
+import Routes from './src/navigation/Routes';
 
 const App = () => {
   useEffect(() => {
     SplashScreen.hide();
   }, []);
-  return <AuthStack />;
+  return (
+    <AuthProvider>
+      <Routes />
+    </AuthProvider>
+  );
 };
 
 export default App;

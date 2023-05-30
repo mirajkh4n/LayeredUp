@@ -15,6 +15,7 @@ const InputFiled = ({
   value,
   returnKeyType,
   multiline,
+  onChangeText,
 }) => {
   return (
     <TextInput
@@ -29,6 +30,7 @@ const InputFiled = ({
       keyboardType={KeyboardType}
       returnKeyType={returnKeyType}
       multiline={multiline}
+      onChangeText={onChangeText}
       style={[styles.input, style]}
     />
   );
@@ -39,10 +41,9 @@ export default InputFiled;
 const styles = StyleSheet.create({
   input: {
     height: 50,
+    paddingLeft: SIZES.padding2,
     marginTop: SIZES.padding2,
-    paddingHorizontal: SIZES.padding,
     color: COLORS.black,
-    backgroundColor: COLORS.inputBackGround,
-    borderRadius: SIZES.padding * 2,
+    backgroundColor: COLORS.text_Input,
   },
 });

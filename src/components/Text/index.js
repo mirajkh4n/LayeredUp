@@ -1,8 +1,8 @@
-import React from "react";
-import { StyleSheet, Text } from "react-native";
-import { COLORS, FONTS } from "../../constants";
+import React from 'react';
+import {StyleSheet, Text} from 'react-native';
+import {COLORS, FONTS} from '../../constants';
 
-const CustomText = ({ style, text, numberOfLines }) => {
+const CustomText = ({style, text, numberOfLines}) => {
   return (
     <Text numberOfLines={numberOfLines} style={[styles.text, style]}>
       {text}
@@ -12,7 +12,7 @@ const CustomText = ({ style, text, numberOfLines }) => {
 const styles = StyleSheet.create({
   text: {
     ...FONTS.Regular10,
-    color: COLORS.black,
+    color: COLORS.text_color,
   },
 });
 
