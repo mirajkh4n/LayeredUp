@@ -15,6 +15,7 @@ export const styles = StyleSheet.create({
   title: {
     ...FONTS.Regular25,
     textAlign: 'center',
+    paddingTop: SIZES.padding,
   },
   description: {
     ...FONTS.Regular15,
@@ -26,4 +27,3 @@ export const styles = StyleSheet.create({
     paddingTop: SIZES.padding,
   },
 });
-

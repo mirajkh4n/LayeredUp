@@ -4,20 +4,18 @@ import {COLORS, FONTS} from '../../constants';
 export const styles = StyleSheet.create({
   lineContainer: {
     flexDirection: 'row',
-    flex: 1,
+    flex: 0.2,
     alignItems: 'center',
     alignSelf: 'center',
   },
   line: {
     backgroundColor: COLORS.text_Input,
     height: 2,
-    marginTop: 10,
-    flex: 0.3,
+   width:100
   },
   orText: {
     color: COLORS.black,
     ...FONTS.Regular10,
-    marginTop: 8,
     marginRight: 10,
     marginLeft: 10,
   },
@@ -29,7 +27,7 @@ export const styles = StyleSheet.create({
   },
   codeFieldRoot: {
     color: COLORS.text_color,
-    marginTop: 20,
+    marginTop: 10,
     padding: 20,
   },
   cell: {
