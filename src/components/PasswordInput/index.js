@@ -44,7 +44,7 @@ const IconInputField = ({
         defaultValue={defaultValue}
         value={value}
         onFocus={onFocus}
-        onBlur={() => {
+         onBlur={() => {
           setFieldTouched(name);
           onBlur(name);
         }}

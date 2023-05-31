@@ -9,6 +9,7 @@ import linkedIn from '../assets/images/linkedIn.png';
 import auth_background from '../assets/images/auth_background.png';
 import logoBackground from '../assets/images/logoBackground.png';
 import logo_background from '../assets/images/logo_background.png';
+import profile from '../assets/images/profile.png';
 
 export default {
   login_backImage,
@@ -22,4 +23,5 @@ export default {
   auth_background,
   logoBackground,
   logo_background,
+  profile
 };
