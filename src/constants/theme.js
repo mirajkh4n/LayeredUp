@@ -55,6 +55,10 @@ export const FONTS = {
     fontFamily: 'Inter-Regular',
     fontSize: RFValue(SIZES.h10),
   },
+  Regular11: {
+    fontFamily: 'Inter-Regular',
+    fontSize: RFValue(SIZES.h11),
+  },
   Regular13: {
     fontFamily: 'Inter-Regular',
     fontSize: RFValue(SIZES.h13),
@@ -66,6 +70,10 @@ export const FONTS = {
   Regular18: {
     fontFamily: 'Inter-Regular',
     fontSize: RFValue(SIZES.h18),
+  },
+  Regular20: {
+    fontFamily: 'Inter-Regular',
+    fontSize: RFValue(SIZES.h20),
   },
   Regular25: {
     fontFamily: 'Inter-Regular',

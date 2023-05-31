@@ -5,6 +5,7 @@ import SignIn from '../screens/SignIn';
 import ForgetPassword from '../screens/ForgetPassword';
 import Otp from '../screens/Otp';
 import SignUp from '../screens/SignUp';
+import ChangePassword from '../screens/ChangePassword';
 
 const AuthStack = () => {
   const Stack = createStackNavigator();
@@ -17,6 +18,7 @@ const AuthStack = () => {
       <Stack.Screen name="SignIn" component={SignIn} />
       <Stack.Screen name="ForgetPassword" component={ForgetPassword} />
       <Stack.Screen name="Otp" component={Otp} />
+      <Stack.Screen name="ChangePassword" component={ChangePassword} />
       <Stack.Screen name="SignUp" component={SignUp} />
     </Stack.Navigator>
   );

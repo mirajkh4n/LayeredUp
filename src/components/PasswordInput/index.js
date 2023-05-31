@@ -70,13 +70,14 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'row',
     justifyContent: 'space-between',
+    marginTop: SIZES.padding2,
+    paddingLeft:15
   },
   rightIcon: {
     padding: SIZES.padding2,
   },
   input: {
     height: 50,
-    marginTop: SIZES.padding2,
     color: COLORS.black,
     backgroundColor: COLORS.text_Input,
   },

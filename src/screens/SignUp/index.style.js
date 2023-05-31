@@ -14,8 +14,7 @@ export const styles = StyleSheet.create({
     marginTop: 30,
   },
   check_box: {
-    marginLeft: -SIZES.padding2 * 0.3,
-    paddingRight: SIZES.padding2 * 1.5,
+ 
     alignItems: 'flex-start',
   },
   privacy_view: {
@@ -31,5 +30,19 @@ export const styles = StyleSheet.create({
     ...FONTS.Regular13,
     color: COLORS.secondary,
     textDecorationLine: 'underline',
+  },
+  bottom: {
+    alignSelf: 'center',
+    flexDirection: 'row',
+    paddingTop: 20,
+  },
+  dontText: {color: COLORS.text_Input, ...FONTS.Regular13},
+  btn: {
+    marginBottom: 10,
+    marginLeft: 10,
+  },
+  signUpText: {
+    color: COLORS.secondary,
+    ...FONTS.Regular13,
   },
 });
