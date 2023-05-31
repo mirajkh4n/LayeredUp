@@ -9,8 +9,29 @@ import linkedIn from '../assets/images/linkedIn.png';
 import auth_background from '../assets/images/auth_background.png';
 import logoBackground from '../assets/images/logoBackground.png';
 import logo_background from '../assets/images/logo_background.png';
+import Home_icon from '../assets/images/Home_icon.png';
+import bell from '../assets/images/bell.png';
+import chat from '../assets/images/chat.png';
+import files from '../assets/images/files.png';
+import Forum from '../assets/images/Forum.png';
+import Payment from '../assets/images/Payment.png';
+import profile from '../assets/images/profile.png';
+import search from '../assets/images/search.png';
+import service from '../assets/images/service.png';
+import Subscriptions from '../assets/images/Subscriptions.png';
+import Video_Icon from '../assets/images/Video_Icon.png';
+import law from '../assets/images/law.png';
 
 export default {
+  chat,
+  files,
+  Forum,
+  Payment,
+  profile,
+  search,
+  service,
+  Subscriptions,
+  Video_Icon,
   login_backImage,
   login_logo,
   background_image,
@@ -22,4 +43,7 @@ export default {
   auth_background,
   logoBackground,
   logo_background,
+  Home_icon,
+  bell,
+  law,
 };
