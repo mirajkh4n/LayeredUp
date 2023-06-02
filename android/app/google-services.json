@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "540197922544",
+    "project_id": "layeredup-75300",
+    "storage_bucket": "layeredup-75300.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:540197922544:android:23dff5933e20fb38880435",
+        "android_client_info": {
+          "package_name": "com.layeredup"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSgQYWmkGWH6lWLxSaBZWg1HMlo-yAUT4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

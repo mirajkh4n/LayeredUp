@@ -1,14 +1,17 @@
-import {StyleSheet, Text, View} from 'react-native';
-import React from 'react';
+import React, {useEffect} from 'react';
+import SplashScreen from 'react-native-splash-screen';
+import {AuthProvider} from './src/navigation/AuthProvider';
+import Routes from './src/navigation/Routes';
 
 const App = () => {
+  useEffect(() => {
+    SplashScreen.hide();
+  }, []);
   return (
-    <View>
-      <Text>App</Text>
-    </View>
+    <AuthProvider>
+      <Routes />
+    </AuthProvider>
   );
 };
 
 export default App;
-
-const styles = StyleSheet.create({});
