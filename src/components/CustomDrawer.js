@@ -11,11 +11,17 @@ import {COLORS} from '../constants';
 import images from '../constants/images';
 import {CodeField} from 'react-native-confirmation-code-field';
 import Container from './container';
+import CustomButton from './Button';
+import {AuthContext} from '../navigation/AuthProvider';
+import {Icons} from '../components/icons';
+import drawer_icon from '../assets/icons/drawer_icon';
+import logOut_icon from '../assets/icons/logOut_icon';
 
 export default function CustomDrawer(props) {
   //   const logOut = () => {
   //     AsyncStorage.clear();
   //   };
+  const {logout, user} = useContext(AuthContext);
   const arr = [
     {
       title: 'Home',
@@ -159,7 +165,19 @@ export default function CustomDrawer(props) {
           );
         })}
       </ScrollView>
-      <View style={{height: 100, backgroundColor: COLORS.primary}}></View>
+      <View style={{height: 45}}>
+        <TouchableOpacity
+          onPress={() => logout()}
+          text={'Logout'}
+          style={{flexDirection: 'row', alignContent: 'flex-start'}}>
+          <Image
+            source={images.logout_image_icon}
+            style={{height: 45, width: 45, resizeMode: 'contain'}}
+          />
+          <Text style={{color: 'red', marginLeft: 10}}>Logout</Text>
+        </TouchableOpacity>
+        {/* <CustomButton onPress={() => logout()} text={'Logout'} /> */}
+      </View>
     </View>
   );
 }

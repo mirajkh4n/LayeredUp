@@ -44,10 +44,10 @@ const IconInputField = ({
         defaultValue={defaultValue}
         value={value}
         onFocus={onFocus}
-         onBlur={() => {
-          setFieldTouched(name);
-          onBlur(name);
-        }}
+        // onBlur={() => {
+        //   setFieldTouched(name);
+        //   onBlur(name);
+        // }}
         maxLength={maxLength}
         editable={isEdit}
         underlineColorAndroid="transparent"
@@ -71,7 +71,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     marginTop: SIZES.padding2,
-    paddingLeft:15
+    paddingLeft: 15,
   },
   rightIcon: {
     padding: SIZES.padding2,
