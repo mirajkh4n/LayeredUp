@@ -16,11 +16,15 @@ import files from '../assets/images/files.png';
 import Forum from '../assets/images/Forum.png';
 import Payment from '../assets/images/Payment.png';
 import profile from '../assets/images/profile.png';
+import profiledp from '../assets/images/profiledp.png';
 import search from '../assets/images/search.png';
 import service from '../assets/images/service.png';
 import Subscriptions from '../assets/images/Subscriptions.png';
 import Video_Icon from '../assets/images/Video_Icon.png';
 import law from '../assets/images/law.png';
+import logOut_icon from '../assets/images/logout_icon.png';
+import logout_logo from '../assets/images/logout_logo.png';
+import logout_image_icon from '../assets/images/logout_image_icon.png';
 
 export default {
   chat,
@@ -46,4 +50,8 @@ export default {
   Home_icon,
   bell,
   law,
+  logOut_icon,
+  logout_logo,
+  logout_image_icon,
+  profiledp,
 };

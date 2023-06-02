@@ -3,7 +3,7 @@ const {width, height} = Dimensions.get('window');
 import {RFValue} from 'react-native-responsive-fontsize';
 
 export const COLORS = {
-  primary: '#C50077',
+  primary: '#151E2F',
   secondary: '#E39F20',
   white: '#FFFFFF',
   black: '#000000',
