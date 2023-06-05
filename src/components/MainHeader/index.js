@@ -16,14 +16,16 @@ const MainHeader = ({
   isHome = false,
   showNoIcons = false,
   isProfile = false,
-  showRightIcon = true,
+  showRightIcon = false,
   onPressNotification,
   isSearchbar = false,
+  style,
+  customStyle
 }) => {
   return (
     <>
-      <View>
-        <View style={styles.main_view}>
+      <View style={customStyle}>
+        <View style={[styles.main_view,{style}]}>
           {showNoIcons ? (
             <View />
           ) : (
@@ -31,7 +33,7 @@ const MainHeader = ({
               activeOpacity={0.7}
               style={{
                 width: 30,
-                height: 50,
+                height: 30,
                 justifyContent: 'center',
                 alignItems: 'center',
                 paddingHorizontal: SIZES.padding * 2,

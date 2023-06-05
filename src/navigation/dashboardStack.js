@@ -5,6 +5,9 @@ import CategoryLawyer from '../screens/CategoryLawyer';
 import SubcategoryLawyer from '../screens/SubcategoryLawyer';
 import Lawyer from '../screens/Lawyers';
 import Explore from '../screens/Explore';
+import Settings from '../screens/Settings';
+import PrivacySettings from '../screens/PrivacySettings';
+import TermsConditions from '../screens/TermsConditions';
 const DashBoardStack = () => {
   const Stack = createStackNavigator();
   return (
@@ -16,6 +19,11 @@ const DashBoardStack = () => {
       <Stack.Screen name="SubcategoryLawyer" component={SubcategoryLawyer} />
       <Stack.Screen name="Lawyer" component={Lawyer} />
       <Stack.Screen name="Explore" component={Explore} />
+      <Stack.Screen name="Settings" component={Settings} />
+      <Stack.Screen name="PrivacySettings" component={PrivacySettings} />
+      <Stack.Screen name="TermsConditions" component={TermsConditions} />
+
+
 
 
     </Stack.Navigator>
