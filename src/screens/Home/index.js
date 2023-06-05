@@ -13,32 +13,32 @@ const Home = ({navigation}) => {
     {
       id: 1,
       name: 'Mr. James Else',
-      image: images.lawyer_image,
+      image: images.lawyer_image_home,
     },
     {
       id: 2,
       name: 'Mr. James Else',
-      image: images.lawyer_image,
+      image: images.lawyer_image_home,
     },
     {
       id: 3,
       name: 'Mr. James Else',
-      image: images.lawyer_image,
+      image: images.lawyer_image_home,
     },
     {
       id: 4,
       name: 'Mr. James Else',
-      image: images.lawyer_image,
+      image: images.lawyer_image_home,
     },
     {
       id: 4,
       name: 'Mr. James Else',
-      image: images.lawyer_image,
+      image: images.lawyer_image_home,
     },
     {
       id: 4,
       name: 'Mr. James Else',
-      image: images.lawyer_image,
+      image: images.lawyer_image_home,
     },
   ];
   const ToplawyersData = [
@@ -70,7 +70,6 @@ const Home = ({navigation}) => {
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     },
   ];
-
   return (
     <Container customStyle={{backgroundColor: COLORS.white}}>
       <View style={styles.container}>
@@ -154,7 +153,6 @@ const Home = ({navigation}) => {
             )}
           />
         </View>
-
         <View
           style={{
             flexDirection: 'row',
@@ -208,7 +206,6 @@ const Home = ({navigation}) => {
                   position: 'absolute',
                   bottom: 8,
                 }}></View>
-
               <View style={{width: '68%', marginHorizontal: 10}}>
                 <View style={{flexDirection: 'row'}}>
                   <Text
@@ -220,7 +217,6 @@ const Home = ({navigation}) => {
                   />
                   <Text text={item.category} style={{marginTop: 5}} />
                 </View>
-
                 <Text
                   text={item.test}
                   style={{color: COLORS.secondary, ...FONTS.Medium11}}

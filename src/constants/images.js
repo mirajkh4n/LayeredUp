@@ -25,8 +25,13 @@ import law from '../assets/images/law.png';
 import logOut_icon from '../assets/images/logout_icon.png';
 import logout_logo from '../assets/images/logout_logo.png';
 import logout_image_icon from '../assets/images/logout_image_icon.png';
-import lawyer_image from '../assets/images/lawyer_image.png';
+import category_lawyerdp from '../assets/images/category_lawyerdp.png';
+import lawyerdp from '../assets/images/lawyerdp.png';
+import lawyer_profile from '../assets/images/lawyer_profile.png';
+import lawyer_image_home from '../assets/images/lawyer_image_home.png';
 import top_lawyer_profile from '../assets/images/top_lawyer_profile.png';
+import logo_2 from '../assets/images/logo_2.png';
+
 export default {
   chat,
   files,
@@ -55,6 +60,10 @@ export default {
   logout_logo,
   logout_image_icon,
   profiledp,
-  lawyer_image,
+  category_lawyerdp,
+  lawyerdp,
+  lawyer_profile,
+  logo_2,
   top_lawyer_profile,
+  lawyer_image_home,
 };

@@ -9,18 +9,9 @@ import {
 import React, {useContext} from 'react';
 import {COLORS} from '../constants';
 import images from '../constants/images';
-import {CodeField} from 'react-native-confirmation-code-field';
-import Container from './container';
-import CustomButton from './Button';
 import {AuthContext} from '../navigation/AuthProvider';
-import {Icons} from '../components/icons';
-import drawer_icon from '../assets/icons/drawer_icon';
-import logOut_icon from '../assets/icons/logOut_icon';
 
 export default function CustomDrawer(props) {
-  //   const logOut = () => {
-  //     AsyncStorage.clear();
-  //   };
   const {logout, user} = useContext(AuthContext);
   const arr = [
     {
@@ -36,22 +27,22 @@ export default function CustomDrawer(props) {
     {
       title: 'Manage Services',
       icon: images.service,
-      goto: () => props.navigation.navigate('ManageServices'),
+      goto: () => props.navigation.navigate('CategoryLawyer'),
     },
     {
       title: 'Clients Forum',
       icon: images.Forum,
-      goto: () => props.navigation.navigate('ClientsForum'),
+      goto: () => props.navigation.navigate('SubcategoryLawyer'),
     },
     {
       title: 'Lawyer Guild',
       icon: images.law,
-      goto: () => props.navigation.navigate('LawyerGuild'),
+      goto: () => props.navigation.navigate('Lawyer'),
     },
     {
       title: 'Meetings',
       icon: images.chat,
-      goto: () => props.navigation.navigate('Meetings'),
+      goto: () => props.navigation.navigate('Explore'),
     },
     {
       title: 'Forum',
