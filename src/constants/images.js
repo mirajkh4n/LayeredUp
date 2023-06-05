@@ -25,7 +25,8 @@ import law from '../assets/images/law.png';
 import logOut_icon from '../assets/images/logout_icon.png';
 import logout_logo from '../assets/images/logout_logo.png';
 import logout_image_icon from '../assets/images/logout_image_icon.png';
-
+import lawyer_image from '../assets/images/lawyer_image.png';
+import top_lawyer_profile from '../assets/images/top_lawyer_profile.png';
 export default {
   chat,
   files,
@@ -54,4 +55,6 @@ export default {
   logout_logo,
   logout_image_icon,
   profiledp,
+  lawyer_image,
+  top_lawyer_profile,
 };
