@@ -101,6 +101,14 @@ export const FONTS = {
   },
 
   //Bold
+  Bold11: {
+    fontFamily: 'Inter-Bold',
+    fontSize: RFValue(SIZES.h11),
+  },
+  Bold14: {
+    fontFamily: 'Inter-Bold',
+    fontSize: RFValue(SIZES.h14),
+  },
   Bold16: {
     fontFamily: 'Inter-Bold',
     fontSize: RFValue(SIZES.h16),

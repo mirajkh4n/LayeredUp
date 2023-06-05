@@ -45,7 +45,7 @@ const MainHeader = ({
               <Image
                 source={images.logo_withWhite_text}
                 resizeMode="contain"
-                style={{height: 100, width: 200}}
+                style={{height: 100   , width: 200}}
               />
             ) : (
               <Text numberOfLines={1} style={styles.title} text={title} />
