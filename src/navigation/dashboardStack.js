@@ -8,6 +8,7 @@ import Explore from '../screens/Explore';
 import Settings from '../screens/Settings';
 import PrivacySettings from '../screens/PrivacySettings';
 import TermsConditions from '../screens/TermsConditions';
+import Forms from '../screens/Forms';
 const DashBoardStack = () => {
   const Stack = createStackNavigator();
   return (
@@ -22,6 +23,8 @@ const DashBoardStack = () => {
       <Stack.Screen name="Settings" component={Settings} />
       <Stack.Screen name="PrivacySettings" component={PrivacySettings} />
       <Stack.Screen name="TermsConditions" component={TermsConditions} />
+      <Stack.Screen name="Forms" component={Forms} />
+
 
 
 

@@ -144,3 +144,30 @@ export const LawyerData = [
  
   
 ];
+export const FormsData = [
+  {
+    image: images.formdp,
+    name: 'Alexa Smith',
+    level: 'Average Case',
+  },
+  {
+      image: images.formdp,
+      name: 'Alexa Smith',
+      level: 'Average Case',
+    },
+    {
+      image: images.formdp,
+      name: 'Alexa Smith',
+      level: 'Average Case',
+    },
+    {
+      image: images.formdp,
+      name: 'Alexa Smith',
+      level: 'Average Case',
+    },
+    {
+      image: images.formdp,
+      name: 'Alexa Smith',
+      level: 'Average Case',
+    },
+];

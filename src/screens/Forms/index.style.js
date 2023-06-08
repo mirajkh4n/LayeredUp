@@ -1,16 +1,29 @@
 import {StyleSheet} from 'react-native';
-import {COLORS, FONTS} from '../../constants';
+import {COLORS, FONTS, SIZES} from '../../constants';
 
 export const styles = StyleSheet.create({
-  container: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    paddingVertical: 20,
+  title: {
+    ...FONTS.Bold16,
   },
-  logoutBtn:{
+  container: {
+    height: 120,
+    justifyContent: 'space-between',
+    backgroundColor: '#F5F6FA',
+    marginTop: SIZES.padding,
+    paddingLeft: SIZES.padding,
     flexDirection: 'row',
     alignItems: 'center',
-    paddingVertical: 50,
+  },
+  profile: {
+    height: 80,
+    width: 80,
+  },
+  btn: {
+    height: 28,
+    width: 100,
+    backgroundColor: COLORS.secondary,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   centeredView: {
     flex: 1,
@@ -19,8 +32,8 @@ export const styles = StyleSheet.create({
     marginTop: 22,
   },
   modalView: {
-    height: '30%',
-    width: '90%',
+    height: '25%',
+    width: '85%',
     backgroundColor: 'white',
     alignItems: 'center',
   },
@@ -31,6 +44,4 @@ export const styles = StyleSheet.create({
     justifyContent: 'center',
     backgroundColor: COLORS.primary,
   },
-
-  
 });

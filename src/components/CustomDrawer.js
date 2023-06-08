@@ -47,7 +47,7 @@ export default function CustomDrawer(props) {
     {
       title: 'Forum',
       icon: images.files,
-      goto: () => props.navigation.navigate('Forum'),
+      goto: () => props.navigation.navigate('Forms'),
     },
     {
       title: 'Notification',

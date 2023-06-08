@@ -31,6 +31,8 @@ import lawyer_profile from '../assets/images/lawyer_profile.png';
 import lawyer_image_home from '../assets/images/lawyer_image_home.png';
 import top_lawyer_profile from '../assets/images/top_lawyer_profile.png';
 import logo_2 from '../assets/images/logo_2.png';
+import formdp from '../assets/images/formdp.png';
+
 
 export default {
   chat,
@@ -66,4 +68,5 @@ export default {
   logo_2,
   top_lawyer_profile,
   lawyer_image_home,
+  formdp
 };
