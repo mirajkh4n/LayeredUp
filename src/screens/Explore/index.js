@@ -5,7 +5,7 @@ import MainHeader from '../../components/MainHeader';
 import {ExploreData} from '../../constants/config';
 import {styles} from './index.style';
 
-const Explore = () => {
+const Explore = ({navigation}) => {
   return (
     <Container>
       <MainHeader isHome={true} />
@@ -17,7 +17,7 @@ const Explore = () => {
           showsVerticalScrollIndicator={false}
           data={ExploreData}
           renderItem={({item, ind}) => (
-            <TouchableOpacity key={item} style={styles.container}>
+            <TouchableOpacity key={item} style={styles.container} onPress={() =>navigation.navigate('QuestionarieForm')}>
               <Icons name={item.icon}/>
               <Text
                 text={item.title}
