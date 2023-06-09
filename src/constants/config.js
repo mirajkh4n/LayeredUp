@@ -141,7 +141,6 @@ export const LawyerData = [
     category: 'Lawyer Category',
     status: 'Unverified',
   },
-<<<<<<< HEAD
 ];
 export const popularTopics = [
   {
@@ -210,10 +209,7 @@ export const toplawyersData = [
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   },
 ];
-=======
- 
-  
-];
+
 export const FormsData = [
   {
     image: images.formdp,
@@ -221,24 +217,23 @@ export const FormsData = [
     level: 'Average Case',
   },
   {
-      image: images.formdp,
-      name: 'Alexa Smith',
-      level: 'Average Case',
-    },
-    {
-      image: images.formdp,
-      name: 'Alexa Smith',
-      level: 'Average Case',
-    },
-    {
-      image: images.formdp,
-      name: 'Alexa Smith',
-      level: 'Average Case',
-    },
-    {
-      image: images.formdp,
-      name: 'Alexa Smith',
-      level: 'Average Case',
-    },
+    image: images.formdp,
+    name: 'Alexa Smith',
+    level: 'Average Case',
+  },
+  {
+    image: images.formdp,
+    name: 'Alexa Smith',
+    level: 'Average Case',
+  },
+  {
+    image: images.formdp,
+    name: 'Alexa Smith',
+    level: 'Average Case',
+  },
+  {
+    image: images.formdp,
+    name: 'Alexa Smith',
+    level: 'Average Case',
+  },
 ];
->>>>>>> e9df1b588d0bcdef7b09300cc2c7e7b46df5b845

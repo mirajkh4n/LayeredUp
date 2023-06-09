@@ -8,14 +8,11 @@ import Explore from '../screens/Explore';
 import Settings from '../screens/Settings';
 import PrivacySettings from '../screens/PrivacySettings';
 import TermsConditions from '../screens/TermsConditions';
-<<<<<<< HEAD
 import Forum from '../screens/Forum';
 import ForumDetails from '../screens/ForumDetails';
 import Notifications from '../screens/notification';
-=======
 import Forms from '../screens/Forms';
 import QuestionarieForm from '../screens/QuestionarieForm';
->>>>>>> e9df1b588d0bcdef7b09300cc2c7e7b46df5b845
 const DashBoardStack = () => {
   const Stack = createStackNavigator();
   return (
@@ -30,13 +27,10 @@ const DashBoardStack = () => {
       <Stack.Screen name="Settings" component={Settings} />
       <Stack.Screen name="PrivacySettings" component={PrivacySettings} />
       <Stack.Screen name="TermsConditions" component={TermsConditions} />
-<<<<<<< HEAD
       <Stack.Screen name="Forum" component={Forum} />
       <Stack.Screen name="ForumDetails" component={ForumDetails} />
-=======
       <Stack.Screen name="Forms" component={Forms} />
       <Stack.Screen name="QuestionarieForm" component={QuestionarieForm} />
->>>>>>> e9df1b588d0bcdef7b09300cc2c7e7b46df5b845
     </Stack.Navigator>
   );
 };
