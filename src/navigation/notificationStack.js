@@ -1,11 +1,11 @@
 import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
-import Notification from '../screens/notification';
+import Notifications from '../screens/Notifocations';
 const NotificationStack = () => {
   const Stack = createStackNavigator();
   return (
     <Stack.Navigator screenOptions={{headerShown: false}}>
-      <Stack.Screen name="Notification" component={Notification} />
+      <Stack.Screen name="Notification" component={Notifications} />
     </Stack.Navigator>
   );
 };

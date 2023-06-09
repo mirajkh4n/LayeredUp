@@ -7,9 +7,10 @@ import {
   ScrollView,
 } from 'react-native';
 import React, {useContext} from 'react';
-import {COLORS} from '../constants';
+import {COLORS, FONTS} from '../constants';
 import images from '../constants/images';
 import {AuthContext} from '../navigation/AuthProvider';
+import edit_profileIcon from '../assets/icons/edit_profile-icon';
 
 export default function CustomDrawer(props) {
   const {logout, user} = useContext(AuthContext);
@@ -93,11 +94,11 @@ export default function CustomDrawer(props) {
         backgroundColor: COLORS.white,
         flex: 1,
       }}>
-      <View style={{flex: 0.2, backgroundColor: '#151E2F'}}>
+      <View style={{flex: 0.2, backgroundColor: '#151E2F', paddingTop: 15}}>
         {/* <View style={{alignSelf: 'flex-end'}}></View> */}
         <View style={{flexDirection: 'row', alignItems: 'center'}}>
           <Image
-            source={images.login_logo}
+            source={images.lawyer_profile}
             style={{height: 70, width: 70, marginTop: 20, marginLeft: 20}}
           />
           <View style={{}}>
@@ -106,14 +107,21 @@ export default function CustomDrawer(props) {
                 style={{
                   alignSelf: 'center',
                   marginLeft: 10,
-                  fontSize: 25,
-                  color: COLORS.black,
+                  ...FONTS.Regular15,
+                  color: COLORS.white,
                 }}>
-                ........
+                Jessica Seth
               </Text>
             </View>
-            <View style={{alignItems: 'flex-end'}}>
-              <Text style={{color: COLORS.black, fontSize: 8}}>.....</Text>
+            <View>
+              <Text
+                style={{
+                  color: COLORS.white,
+                  ...FONTS.Regular10,
+                  marginLeft: 10,
+                }}>
+                jess@email.com
+              </Text>
             </View>
           </View>
         </View>

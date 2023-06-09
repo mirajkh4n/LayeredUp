@@ -9,6 +9,7 @@ export const COLORS = {
   black: '#000000',
   text_Input: '#DFE0EC',
   text_color: '#151E2F',
+  backgroundColor: '#F5F6FA',
 };
 
 export const SIZES = {

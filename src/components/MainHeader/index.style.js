@@ -17,4 +17,10 @@ export const styles = StyleSheet.create({
     textAlign: 'left',
     width: '85%',
   },
+  topic: {
+    bottom: 50,
+    color: COLORS.white,
+    ...FONTS.Regular18,
+    marginHorizontal: 20,
+  },
 });
