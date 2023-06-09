@@ -4,7 +4,7 @@ import {TouchableOpacity} from 'react-native-gesture-handler';
 import CustomText from '../Text';
 import {COLORS, FONTS, SIZES} from '../../constants';
 
-const CustomButton = ({text, style, customstyle, onPress}) => {
+const CustomButton = ({text, customstyle, onPress,style}) => {
   return (
     <TouchableOpacity
       onPress={onPress}

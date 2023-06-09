@@ -31,8 +31,13 @@ import lawyer_profile from '../assets/images/lawyer_profile.png';
 import lawyer_image_home from '../assets/images/lawyer_image_home.png';
 import top_lawyer_profile from '../assets/images/top_lawyer_profile.png';
 import logo_2 from '../assets/images/logo_2.png';
+<<<<<<< HEAD
 import forum_top_icon from '../assets/images/forum_top_icon.png';
 import minus_icon from '../assets/images/minus_icon.png';
+=======
+import formdp from '../assets/images/formdp.png';
+
+>>>>>>> e9df1b588d0bcdef7b09300cc2c7e7b46df5b845
 
 export default {
   chat,
@@ -68,6 +73,10 @@ export default {
   logo_2,
   top_lawyer_profile,
   lawyer_image_home,
+<<<<<<< HEAD
   forum_top_icon,
   minus_icon,
+=======
+  formdp
+>>>>>>> e9df1b588d0bcdef7b09300cc2c7e7b46df5b845
 };

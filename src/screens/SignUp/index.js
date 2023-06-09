@@ -59,6 +59,7 @@ const SignUp = ({navigation}) => {
               <IconInputField  rightIcon={password_icon} placeholder={'Confirm Password'} />
               <View style={{flexDirection: 'row', paddingTop: SIZES.padding2}}>
                 <CheckBox
+                
                   isChecked={isCheck}
                   style={styles.check_box}
                   onClick={() => setIsCheck(!isCheck)}

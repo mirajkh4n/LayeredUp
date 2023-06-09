@@ -1,14 +1,23 @@
-import React from 'react';
-import {View, ImageBackground, Image} from 'react-native';
-import {Container, Icons, Text} from '../../components';
+import React, {useState,useContext} from 'react';
+import {
+  View,
+  ImageBackground,
+  Image,
+  Modal,
+  TouchableOpacity,
+} from 'react-native';
+import {Container, CustomButton, Icons, Text} from '../../components';
 import MainHeader from '../../components/MainHeader';
 import images from '../../constants/images';
 import Setting_back_icon from '../../assets/icons/Setting_back_icon';
-import {FONTS} from '../../constants';
-import {TouchableOpacity} from 'react-native-gesture-handler';
+import {COLORS, FONTS, SIZES} from '../../constants';
 import {styles} from './index.style';
+import cancel_icon from '../../assets/icons/cancel_icon';
+import { AuthContext } from '../../navigation/AuthProvider';
 
 const Settings = ({navigation}) => {
+  const {logout, user} = useContext(AuthContext);
+  const [modalVisible, setModalVisible] = useState(false);
   return (
     <Container scroll={true}>
       <MainHeader title={'Settings'} showRightIcon={true} />
@@ -48,7 +57,9 @@ const Settings = ({navigation}) => {
               style={{...FONTS.Regular11}}
             />
           </View>
-          <TouchableOpacity style={{paddingTop: 10}} onPress={() => navigation.navigate('PrivacySettings')}>
+          <TouchableOpacity
+            style={{paddingTop: 10}}
+            onPress={() => navigation.navigate('PrivacySettings')}>
             <Icons name={Setting_back_icon} />
           </TouchableOpacity>
         </View>
@@ -64,7 +75,9 @@ const Settings = ({navigation}) => {
             <Icons name={Setting_back_icon} />
           </TouchableOpacity>
         </View>
-        <TouchableOpacity onPress={() => logout()} style={styles.logoutBtn}>
+        <TouchableOpacity
+          style={styles.logoutBtn}
+          onPress={() => setModalVisible(true)}>
           <Image
             source={images.logOut_icon}
             style={{height: 20, width: 20, paddingLeft: 20}}
@@ -75,6 +88,26 @@ const Settings = ({navigation}) => {
           />
         </TouchableOpacity>
       </ImageBackground>
+      <Modal transparent={true} visible={modalVisible}>
+        <View style={styles.centeredView}>
+          <View style={styles.modalView}>
+            <TouchableOpacity
+              style={{
+                padding: 10,
+                alignSelf: 'flex-end',
+              }}
+              onPress={() => setModalVisible(!modalVisible)}>
+              <Icons name={cancel_icon} />
+            </TouchableOpacity>
+            <Text text={'LogOut'} style={{...FONTS.Regular25}} />
+            <Text
+              text={'Are you Sure you want to logout?'}
+              style={{...FONTS.Regular15, paddingTop: SIZES.padding}}
+            />
+            <CustomButton text={'Yes'} customstyle={{paddingHorizontal:150}} onPress={() => logout()}/>
+          </View>
+        </View>
+      </Modal>
     </Container>
   );
 };
