@@ -55,48 +55,6 @@ export const SubCategoryData = [
     maincategory: 'MainCategory',
   },
 ];
-export const ExploreData = [
-  {
-    title: 'Clients Forms',
-    icon: client_forms_icon,
-  },
-  {
-    title: 'Manage Services',
-    icon: manage_services,
-  },
-  {
-    title: 'Meetings',
-    icon: meetings_icon,
-  },
-  {
-    title: 'Lawyer Grid',
-    icon: lawyer_grid_icon,
-  },
-  {
-    title: 'My Subscription',
-    icon: my_subscription,
-  },
-  {
-    title: 'Forum',
-    icon: forum,
-  },
-  {
-    title: 'Explore',
-    icon: explore_icon,
-  },
-  {
-    title: 'Setting',
-    icon: settings_icon,
-  },
-  {
-    title: 'Invoice History',
-    icon: invoice_history_icon,
-  },
-  {
-    title: 'Questionarie',
-    icon: questionire_icon,
-  },
-];
 
 export const LawyerData = [
   {

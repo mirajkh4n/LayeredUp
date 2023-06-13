@@ -92,11 +92,26 @@ const Notifications = ({navigation}) => {
                 <Text text={item.time} />
               </View>
             </View>
-            <View>
-              <TouchableOpacity>
+            <View
+              style={{
+                flexDirection: 'row',
+                alignSelf: 'flex-end',
+                bottom: 10,
+              }}>
+              <TouchableOpacity
+                style={{
+                  backgroundColor: 'yellow',
+                  padding: 10,
+                  marginRight: 10,
+                }}>
                 <Text text={'Accept'} />
               </TouchableOpacity>
-              <TouchableOpacity>
+              <TouchableOpacity
+                style={{
+                  backgroundColor: 'red',
+                  padding: 10,
+                  marginRight: 10,
+                }}>
                 <Text text={'Ignore'} />
               </TouchableOpacity>
             </View>
