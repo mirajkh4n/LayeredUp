@@ -10,14 +10,14 @@ import PrivacySettings from '../screens/PrivacySettings';
 import TermsConditions from '../screens/TermsConditions';
 import Forum from '../screens/Forum';
 import ForumDetails from '../screens/ForumDetails';
-import Notifications from '../screens/notification';
 import Forms from '../screens/Forms';
 import QuestionarieForm from '../screens/QuestionarieForm';
+import Clients from '../screens/Clients';
 const DashBoardStack = () => {
   const Stack = createStackNavigator();
   return (
     <Stack.Navigator
-      initialRouteName="Home"
+      initialRouteName="Explore"
       screenOptions={{headerShown: false}}>
       <Stack.Screen name="Home" component={Home} />
       <Stack.Screen name="CategoryLawyer" component={CategoryLawyer} />
@@ -31,6 +31,7 @@ const DashBoardStack = () => {
       <Stack.Screen name="ForumDetails" component={ForumDetails} />
       <Stack.Screen name="Forms" component={Forms} />
       <Stack.Screen name="QuestionarieForm" component={QuestionarieForm} />
+      <Stack.Screen name="Clients" component={Clients} />
     </Stack.Navigator>
   );
 };
