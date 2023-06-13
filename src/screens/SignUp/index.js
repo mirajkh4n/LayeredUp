@@ -17,8 +17,9 @@ const SignUp = ({navigation}) => {
 
   const {register} = useContext(AuthContext);
   return (
-    <ImageContainer customStyle={{justifyContent: 'center'}}>
       <Container scroll={true}>
+    <ImageContainer customStyle={{justifyContent: 'center'}}>
+
         <Header isHome={true} onPressIcon={() => navigation.goBack()} />
         <View style={{justifyContent: 'center', flex: 0.3}}>
           <ImageBackground
@@ -94,8 +95,9 @@ const SignUp = ({navigation}) => {
             <Text text={'Sign In'} style={styles.signUpText} />
           </TouchableOpacity>
         </View>
-      </Container>
     </ImageContainer>
+
+      </Container>
   );
 };
 
