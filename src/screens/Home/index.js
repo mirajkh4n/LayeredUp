@@ -8,6 +8,7 @@ import {COLORS, FONTS, SIZES} from '../../constants';
 import {FlatList, TextInput} from 'react-native-gesture-handler';
 import search_icon from '../../assets/icons/search_icon';
 import location_icon from '../../assets/icons/location_icon';
+import {toplawyersData} from '../../constants/config';
 const Home = ({navigation}) => {
   const lawyersData = [
     {
@@ -41,37 +42,9 @@ const Home = ({navigation}) => {
       image: images.lawyer_image_home,
     },
   ];
-  const ToplawyersData = [
-    {
-      id: 1,
-      name: 'Mr. James Else',
-      image: images.top_lawyer_profile,
-      category: '(Sub Category)',
-      test: 'Lawyer Category',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    },
-    {
-      id: 1,
-      name: 'Mr. James Else',
-      image: images.top_lawyer_profile,
-      category: '(Sub Category)',
-      test: 'Lawyer Category',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    },
-    {
-      id: 1,
-      name: 'Mr. James Else',
-      image: images.top_lawyer_profile,
-      category: '(Sub Category)',
-      test: 'Lawyer Category',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    },
-  ];
+
   return (
-    <Container  customStyle={{backgroundColor: COLORS.white}}>
+    <Container customStyle={{backgroundColor: COLORS.white}}>
       <View style={styles.container}>
         <Image source={images.profiledp} style={styles.profile} />
         <View style={{paddingRight: 50}}>
@@ -177,14 +150,15 @@ const Home = ({navigation}) => {
         />
         <FlatList
           showsHorizontalScrollIndicator={false}
-          data={ToplawyersData}
+          data={toplawyersData}
           renderItem={({item, ind}) => (
             <View
               style={{
                 marginTop: 30,
                 marginHorizontal: 20,
                 height: 125,
-                backgroundColor: COLORS.text_Input,
+                backgroundColor: '#F5F6FA',
+
                 flexDirection: 'row',
                 elevation: 2,
               }}>
@@ -223,6 +197,7 @@ const Home = ({navigation}) => {
                 />
                 <Text text={item.description} />
                 <TouchableOpacity
+                  onPress={() => navigation.navigate('Forum')}
                   style={{
                     height: 37,
                     width: 85,

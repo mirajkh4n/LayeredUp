@@ -7,6 +7,7 @@ import drawer_icon from '../../assets/icons/drawer_icon';
 import backIcon_white from '../../assets/icons/backIcon_white';
 import search_icon from '../../assets/icons/search_icon';
 import {TextInput} from 'react-native-gesture-handler';
+import plus_icon from '../../assets/icons/plus_icon';
 
 const MainHeader = ({
   title,
@@ -20,12 +21,14 @@ const MainHeader = ({
   onPressNotification,
   isSearchbar = false,
   style,
-  customStyle
+  customStyle,
+  isPlusIcon = false,
+  isTopic,
 }) => {
   return (
     <>
       <View style={customStyle}>
-        <View style={[styles.main_view,{style}]}>
+        <View style={[styles.main_view, {style}]}>
           {showNoIcons ? (
             <View />
           ) : (
@@ -47,13 +50,23 @@ const MainHeader = ({
               <Image
                 source={images.logo_withWhite_text}
                 resizeMode="contain"
-                style={{height: 100   , width: 200}}
+                style={{height: 100, width: 200}}
               />
             ) : (
               <Text numberOfLines={1} style={styles.title} text={title} />
             )}
           </View>
-
+          {isPlusIcon && (
+            <TouchableOpacity
+              activeOpacity={0.7}
+              style={{
+                marginLeft: SIZES.padding2,
+                marginRight: SIZES.padding2 * 2,
+              }}
+              onPress={onPressFilter}>
+              <Icons name={plus_icon} />
+            </TouchableOpacity>
+          )}
           {isProfile ? (
             <TouchableOpacity activeOpacity={0.7} onPress={onPressSearch}>
               {/* <Icons name={edit_profile_icon} /> */}
@@ -90,6 +103,9 @@ const MainHeader = ({
             </>
           )}
         </View>
+        {isTopic && (
+          <Text numberOfLines={1} style={styles.topic} text={isTopic} />
+        )}
         {isSearchbar && (
           <View
             style={{

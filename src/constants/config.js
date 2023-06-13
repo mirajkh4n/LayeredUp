@@ -66,11 +66,11 @@ export const ExploreData = [
   },
   {
     title: 'Meetings',
-    icon:meetings_icon,
+    icon: meetings_icon,
   },
   {
     title: 'Lawyer Grid',
-    icon:lawyer_grid_icon,
+    icon: lawyer_grid_icon,
   },
   {
     title: 'My Subscription',
@@ -78,72 +78,138 @@ export const ExploreData = [
   },
   {
     title: 'Forum',
-    icon:forum,
+    icon: forum,
   },
   {
     title: 'Explore',
-    icon:explore_icon,
+    icon: explore_icon,
   },
   {
     title: 'Setting',
-    icon:settings_icon,
+    icon: settings_icon,
   },
   {
     title: 'Invoice History',
-    icon:invoice_history_icon,
+    icon: invoice_history_icon,
   },
   {
     title: 'Questionarie',
-    icon:questionire_icon,
+    icon: questionire_icon,
   },
 ];
 
 export const LawyerData = [
   {
-    image:images.lawyerdp,
+    image: images.lawyerdp,
     name: 'James Scott',
     category: 'Lawyer Category',
-    status:"verfied"
+    status: 'verfied',
   },
   {
-    image:images.lawyerdp,
+    image: images.lawyerdp,
     name: 'James Scott',
     category: 'Lawyer Category',
-    status:"verfied"
+    status: 'verfied',
   },
   {
-    image:images.lawyerdp,
+    image: images.lawyerdp,
     name: 'James Scott',
     category: 'Lawyer Category',
-    status:'Unverified'
+    status: 'Unverified',
   },
   {
-    image:images.lawyerdp,
+    image: images.lawyerdp,
     name: 'James Scott',
     category: 'Lawyer Category',
-    status:'Unverified'
+    status: 'Unverified',
   },
   {
-    image:images.lawyerdp,
+    image: images.lawyerdp,
     name: 'James Scott',
     category: 'Lawyer Category',
-    status:'Unverified'
+    status: 'Unverified',
   },
   {
-    image:images.lawyerdp,
+    image: images.lawyerdp,
     name: 'James Scott',
     category: 'Lawyer Category',
-    status:'Unverified'
+    status: 'Unverified',
   },
   {
-    image:images.lawyerdp,
+    image: images.lawyerdp,
     name: 'James Scott',
     category: 'Lawyer Category',
-    status:'Unverified'
+    status: 'Unverified',
   },
- 
-  
 ];
+export const popularTopics = [
+  {
+    id: 1,
+    name: 'Criminal Laws',
+    image: images.forum_top_icon,
+    icon: images.minus_icon,
+  },
+  {
+    id: 1,
+    name: 'Criminal Laws',
+    image: images.forum_top_icon,
+    icon: images.minus_icon,
+  },
+  {
+    id: 1,
+    name: 'Criminal Laws',
+    image: images.forum_top_icon,
+    icon: images.minus_icon,
+  },
+  {
+    id: 1,
+    name: 'Criminal Laws',
+    image: images.forum_top_icon,
+    icon: images.minus_icon,
+  },
+  {
+    id: 1,
+    name: 'Criminal Laws',
+    image: images.forum_top_icon,
+    icon: images.minus_icon,
+  },
+  {
+    id: 1,
+    name: 'Criminal Laws',
+    image: images.forum_top_icon,
+    icon: images.minus_icon,
+  },
+];
+export const toplawyersData = [
+  {
+    id: 1,
+    name: 'Mr. James Else',
+    image: images.top_lawyer_profile,
+    category: '(Sub Category)',
+    test: 'Lawyer Category',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+  },
+  {
+    id: 1,
+    name: 'Mr. James Else',
+    image: images.top_lawyer_profile,
+    category: '(Sub Category)',
+    test: 'Lawyer Category',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+  },
+  {
+    id: 1,
+    name: 'Mr. James Else',
+    image: images.top_lawyer_profile,
+    category: '(Sub Category)',
+    test: 'Lawyer Category',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+  },
+];
+
 export const FormsData = [
   {
     image: images.formdp,
@@ -151,23 +217,23 @@ export const FormsData = [
     level: 'Average Case',
   },
   {
-      image: images.formdp,
-      name: 'Alexa Smith',
-      level: 'Average Case',
-    },
-    {
-      image: images.formdp,
-      name: 'Alexa Smith',
-      level: 'Average Case',
-    },
-    {
-      image: images.formdp,
-      name: 'Alexa Smith',
-      level: 'Average Case',
-    },
-    {
-      image: images.formdp,
-      name: 'Alexa Smith',
-      level: 'Average Case',
-    },
+    image: images.formdp,
+    name: 'Alexa Smith',
+    level: 'Average Case',
+  },
+  {
+    image: images.formdp,
+    name: 'Alexa Smith',
+    level: 'Average Case',
+  },
+  {
+    image: images.formdp,
+    name: 'Alexa Smith',
+    level: 'Average Case',
+  },
+  {
+    image: images.formdp,
+    name: 'Alexa Smith',
+    level: 'Average Case',
+  },
 ];

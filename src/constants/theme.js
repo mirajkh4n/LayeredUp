@@ -9,6 +9,7 @@ export const COLORS = {
   black: '#000000',
   text_Input: '#DFE0EC',
   text_color: '#151E2F',
+  backgroundColor: '#F5F6FA',
 };
 
 export const SIZES = {
@@ -112,6 +113,10 @@ export const FONTS = {
   Bold16: {
     fontFamily: 'Inter-Bold',
     fontSize: RFValue(SIZES.h16),
+  },
+  Bold14: {
+    fontFamily: 'Inter-Bold',
+    fontSize: RFValue(SIZES.h14),
   },
   Bold18: {
     fontFamily: 'Inter-Bold',

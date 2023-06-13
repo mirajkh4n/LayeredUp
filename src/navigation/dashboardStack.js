@@ -8,6 +8,9 @@ import Explore from '../screens/Explore';
 import Settings from '../screens/Settings';
 import PrivacySettings from '../screens/PrivacySettings';
 import TermsConditions from '../screens/TermsConditions';
+import Forum from '../screens/Forum';
+import ForumDetails from '../screens/ForumDetails';
+import Notifications from '../screens/notification';
 import Forms from '../screens/Forms';
 import QuestionarieForm from '../screens/QuestionarieForm';
 const DashBoardStack = () => {
@@ -24,6 +27,8 @@ const DashBoardStack = () => {
       <Stack.Screen name="Settings" component={Settings} />
       <Stack.Screen name="PrivacySettings" component={PrivacySettings} />
       <Stack.Screen name="TermsConditions" component={TermsConditions} />
+      <Stack.Screen name="Forum" component={Forum} />
+      <Stack.Screen name="ForumDetails" component={ForumDetails} />
       <Stack.Screen name="Forms" component={Forms} />
       <Stack.Screen name="QuestionarieForm" component={QuestionarieForm} />
     </Stack.Navigator>
