@@ -15,12 +15,12 @@ import {COLORS, FONTS, SIZES} from '../../constants';
 import {FormsData} from '../../constants/config';
 import cancel_icon from '../../assets/icons/cancel_icon';
 
-const Forms = () => {
+const Forms = ({navigation}) => {
   const [modalVisible, setModalVisible] = useState(false);
   const [modalExpand, setModalExpand] = useState(false);
   return (
     <Container>
-      <MainHeader title={'Forms'} isSearchbar={true} />
+      <MainHeader title={'Forms'} isSearchbar={true}     onPressIcon={() => navigation.goBack()}/>
       <ImageBackground
         resizeMode="contain"
         source={images.logo_2}

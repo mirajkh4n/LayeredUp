@@ -63,6 +63,7 @@ const Notifications = ({navigation}) => {
         title={'Notifications'}
         showRightIcon={true}
         onPressNotification={() => navigation.openDrawer()}
+        onPressIcon={() => navigation.goBack()}
       />
       <FlatList
         ListHeaderComponent={() => <Text>Today</Text>}

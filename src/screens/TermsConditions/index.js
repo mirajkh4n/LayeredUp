@@ -5,12 +5,12 @@ import MainHeader from '../../components/MainHeader';
 import images from '../../constants/images';
 import {FONTS, SIZES} from '../../constants';
 
-const TermsConditions = () => {
+const TermsConditions = ({navigation}) => {
   const [isEnabled, setIsEnabled] = useState(false);
   const toggleSwitch = () => setIsEnabled(previousState => !previousState);
   return (
     <Container scroll={true}>
-      <MainHeader title={'Terms & Conditions'} showRightIcon={true} />
+      <MainHeader title={'Terms & Conditions'} showRightIcon={true}     onPressIcon={() => navigation.goBack()}/>
       <ImageBackground
         resizeMode="contain"
         source={images.logo_2}

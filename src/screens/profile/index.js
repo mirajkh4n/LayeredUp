@@ -14,12 +14,12 @@ import upload_icon from '../../assets/icons/upload_icon';
 import capture_icon from '../../assets/icons/capture_icon';
 import InputFiled from '../../components/InputField';
 
-const Profile = () => {
+const Profile = ({navigation}) => {
   const [isEnabled, setIsEnabled] = useState(false);
   const toggleSwitch = () => setIsEnabled(previousState => !previousState);
   return (
     <Container scroll={true}>
-      <MainHeader title={'Lawyer Profile'} customStyle={{height: 120}} />
+      <MainHeader title={'Lawyer Profile'} customStyle={{height: 120}}     onPressIcon={() => navigation.goBack()}/>
       <View style={{alignItems: 'center'}}>
         <Image
           source={images.lawyer_profile}

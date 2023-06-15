@@ -89,6 +89,13 @@ export const FONTS = {
   Medium11: {
     fontFamily: 'Inter-Medium',
     fontSize: RFValue(SIZES.h11),
+  }, Medium15: {
+    fontFamily: 'Inter-Medium',
+    fontSize: RFValue(SIZES.h15),
+  },
+  Medium18: {
+    fontFamily: 'Inter-Medium',
+    fontSize: RFValue(SIZES.h18),
   },
 
   //SemiBold
