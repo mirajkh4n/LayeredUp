@@ -7,11 +7,11 @@ import {RadioButton} from 'react-native-paper';
 import {COLORS, FONTS, SIZES} from '../../constants';
 import images from '../../constants/images';
 
-const QuestionarieForm = () => {
+const QuestionarieForm = ({navigation}) => {
   const [checked, setChecked] = React.useState('first');
   return (
     <Container scroll={true}>
-      <MainHeader title={'Questionarie Form'} />
+      <MainHeader title={'Questionarie Form'}     onPressIcon={() => navigation.goBack()}/>
       <ImageBackground
         resizeMode="contain"
         source={images.logo_2}

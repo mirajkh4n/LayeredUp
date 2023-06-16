@@ -1,6 +1,6 @@
 import login_backImage from '../assets/images/login_backImage.png';
 import login_logo from '../assets/images/login_logo.png';
-import background_image from '../assets/images/background_image.png';
+import background_logo from '../assets/images/background_logo.png';
 import logo_withWhite_text from '../assets/images/logo_withWhite_text.png';
 import pass_icon from '../assets/images/pass_icon.png';
 import facebook from '../assets/images/facebook.png';
@@ -48,7 +48,7 @@ export default {
   Video_Icon,
   login_backImage,
   login_logo,
-  background_image,
+  background_logo,
   logo_withWhite_text,
   pass_icon,
   facebook,

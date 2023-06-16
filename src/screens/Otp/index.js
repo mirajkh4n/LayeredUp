@@ -22,8 +22,8 @@ const Otp = ({navigation}) => {
   });
 
   return (
-    <ImageContainer>
-      <Container scroll={true}>
+    <Container scroll={true}>
+      <ImageContainer>
         <Header isHome={true} onPressIcon={() => navigation.goBack()} />
         <View style={{justifyContent: 'center', flex: 1}}>
           <ImageBackground
@@ -88,8 +88,8 @@ const Otp = ({navigation}) => {
             />
           </ImageBackground>
         </View>
-      </Container>
-    </ImageContainer>
+      </ImageContainer>
+    </Container>
   );
 };
 

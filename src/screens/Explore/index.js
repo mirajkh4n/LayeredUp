@@ -19,7 +19,7 @@ const Explore = ({navigation}) => {
     {
       title: 'Clients Forms',
       icon: client_forms_icon,
-      goto: () => navigation.navigate('ClientsForms'),
+      goto: () => navigation.navigate('Clients'),
     },
     {
       title: 'Manage Services',
@@ -69,7 +69,12 @@ const Explore = ({navigation}) => {
   ];
   return (
     <Container>
-      <MainHeader isHome={true} />
+      <MainHeader
+        isHome={true}
+        showRightIcon={true}
+        onPressNotification={() => navigation.openDrawer()}
+        onPressIcon={() => navigation.goBack()}
+      />
       <View style={{paddingHorizontal: 20, flex: 1}}>
         <FlatList
           ListFooterComponent={<View style={{height: 20}}></View>}
@@ -85,7 +90,7 @@ const Explore = ({navigation}) => {
               <Icons name={item.icon} />
               <Text
                 text={item.title}
-                style={[styles.title, {textAlign: 'center'}]}
+                style={[styles.title, {textAlign: 'center',paddingTop:10}]}
               />
             </TouchableOpacity>
           )}

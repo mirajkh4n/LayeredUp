@@ -45,7 +45,12 @@ const MainHeader = ({
               <Icons name={backIcon_white} />
             </TouchableOpacity>
           )}
-          <View style={{flex: 1, alignItems: isHome ? 'center' : 'flex-start'}}>
+          <View
+            style={{
+              flex: 1,
+              alignItems: isHome ? 'center' : 'flex-start',
+              bottom: isHome ? 30 : 0,
+            }}>
             {isHome ? (
               <Image
                 source={images.logo_withWhite_text}

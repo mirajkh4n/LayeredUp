@@ -10,7 +10,7 @@ import {popularTopics} from '../../constants/config';
 const Forum = ({navigation}) => {
   return (
     <View style={{flex: 1, backgroundColor: '#fff'}}>
-      <MainHeader isSearchbar={true} isPlusIcon={true} title={'Forum'} />
+      <MainHeader isSearchbar={true} isPlusIcon={true} title={'Forum'}     onPressIcon={() => navigation.goBack()}/>
       <ImageBackground source={images.logo_background} style={{flex: 1}}>
         <View style={styles.main_container}>
           <View style={styles.topic_view}>

@@ -16,7 +16,7 @@ import {FONTS, SIZES} from '../../constants';
 const Lawyer = ({navigation}) => {
   return (
     <Container>
-      <MainHeader title={'Lawyer'} isSearchbar={true} />
+      <MainHeader title={'Lawyer'} isSearchbar={true}     onPressIcon={() => navigation.goBack()}/>
       <ImageBackground source={images.logo_background} style={{flex: 1}}>
         <View style={{paddingHorizontal: 20}}>
           <FlatList

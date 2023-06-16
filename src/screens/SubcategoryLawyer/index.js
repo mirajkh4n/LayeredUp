@@ -8,11 +8,11 @@ import images from '../../constants/images';
 import { CategoryData, SubCategoryData } from '../../constants/config';
 import { COLORS } from '../../constants';
 
-const SubcategoryLawyer = () => {
+const SubcategoryLawyer = ({navigation}) => {
     const [isCheck, setIsCheck] = useState(false);
   return (
     <Container>
-      <MainHeader title={'Subcategory Lawyer'} isSearchbar={true} />
+      <MainHeader title={'Subcategory Lawyer'} isSearchbar={true}     onPressIcon={() => navigation.goBack()}/>
       <ImageBackground source={images.logo_background} style={{flex:1}}>
       <View style={{paddingHorizontal: 20}}>
         <Text text={'Select Subcategories'} style={[styles.title,{paddingLeft:10}]} />

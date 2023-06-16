@@ -20,7 +20,7 @@ const Settings = ({navigation}) => {
   const [modalVisible, setModalVisible] = useState(false);
   return (
     <Container scroll={true}>
-      <MainHeader title={'Settings'} showRightIcon={true} />
+      <MainHeader title={'Settings'} showRightIcon={true}     onPressIcon={() => navigation.goBack()}/>
       <ImageBackground
         resizeMode="contain"
         source={images.logo_2}

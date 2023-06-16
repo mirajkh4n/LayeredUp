@@ -3,7 +3,7 @@ import {COLORS, FONTS, SIZES} from '../../constants';
 
 export const styles = StyleSheet.create({
   title: {
-    ...FONTS.Regular20,
+    ...FONTS.Regular15,
   },
   container: {
     

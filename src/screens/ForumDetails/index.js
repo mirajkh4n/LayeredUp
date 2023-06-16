@@ -8,10 +8,10 @@ import {COLORS, FONTS, SIZES} from '../../constants';
 import images from '../../constants/images';
 import {styles} from './index.style';
 
-const ForumDetails = () => {
+const ForumDetails = ({navigation}) => {
   return (
     <Container scroll={true}>
-      <MainHeader title={'Forum'} isTopic={'Easiest way to get your case'} />
+      <MainHeader title={'Forum'} isTopic={'Easiest way to get your case'}     onPressIcon={() => navigation.goBack()}/>
       <View style={{height: 70, backgroundColor: COLORS.primary, bottom: 30}}>
         <View style={{height: 1, backgroundColor: COLORS.white}}></View>
         <View

@@ -1,5 +1,5 @@
 import React, {useContext, useState} from 'react';
-import {Image, View,TouchableOpacity} from 'react-native';
+import {Image, View, TouchableOpacity} from 'react-native';
 import {Container, CustomButton, ImageContainer} from '../../components';
 import CustomText from '../../components/Text';
 import images from '../../constants/images';
@@ -14,8 +14,8 @@ const SignIn = ({navigation}) => {
   const [password, setPassword] = useState();
   const {login} = useContext(AuthContext);
   return (
-    <ImageContainer onBoarding_background={true}>
-      <Container scroll={true}>
+    <Container scroll={true}>
+      <ImageContainer onBoarding_background={true}>
         <Header
           title={'Back to Main Screen'}
           onPressIcon={() => navigation.goBack()}
@@ -94,8 +94,8 @@ const SignIn = ({navigation}) => {
             <CustomText text={'Sign Up'} style={styles.signUpText} />
           </TouchableOpacity>
         </View>
-      </Container>
-    </ImageContainer>
+      </ImageContainer>
+    </Container>
   );
 };
 
