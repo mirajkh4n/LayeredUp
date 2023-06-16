@@ -74,7 +74,7 @@ const Explore = ({navigation}) => {
         <FlatList
           ListFooterComponent={<View style={{height: 20}}></View>}
           numColumns={2}
-          columnWrapperStyle={{justifyContent: 'space-between'}}
+          columnWrapperStyle={{justifyContent: 'space-around'}}
           showsVerticalScrollIndicator={false}
           data={ExploreData}
           renderItem={({item, ind}) => (

@@ -122,6 +122,10 @@ export const FONTS = {
     fontFamily: 'Inter-Bold',
     fontSize: RFValue(SIZES.h18),
   },
+  Bold20: {
+    fontFamily: 'Inter-Bold',
+    fontSize: RFValue(SIZES.h20),
+  },
   Bold25: {
     fontFamily: 'Inter-Bold',
     fontSize: RFValue(SIZES.h25),

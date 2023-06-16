@@ -30,10 +30,12 @@ export const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     marginTop: 22,
+    shadowColor: '#fff',
+    shadowOpacity: 0.25,
   },
   modalView: {
     height: '25%',
-    width: '85%',
+    width: '90%',
     backgroundColor: 'white',
     alignItems: 'center',
   },

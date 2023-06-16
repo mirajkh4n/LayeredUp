@@ -55,6 +55,15 @@ const Notifications = ({navigation}) => {
       status: true,
       type: 'ViewProfile',
     },
+    {
+      id: 5,
+      image: images.profiledp,
+      title: 'James Else has download the form',
+      timeIcon: time_icon,
+      time: '08:01 PM',
+      status: true,
+      type: 'Clear',
+    },
   ];
 
   return (
@@ -100,20 +109,49 @@ const Notifications = ({navigation}) => {
               }}>
               <TouchableOpacity
                 style={{
-                  backgroundColor: 'yellow',
-                  padding: 10,
+                  backgroundColor: COLORS.secondary,
+                  height: 30,
                   marginRight: 10,
+                  width: 110,
+                  justifyContent: 'center',
                 }}>
-                <Text text={'Accept'} />
+                <Text
+                  text={item.type === 'Accept' ? 'Accept' : 'Open'}
+                  style={{color: COLORS.white, alignSelf: 'center'}}
+                />
               </TouchableOpacity>
               <TouchableOpacity
                 style={{
-                  backgroundColor: 'red',
-                  padding: 10,
+                  backgroundColor: COLORS.primary,
+                  height: 30,
                   marginRight: 10,
+                  width: 110,
+                  justifyContent: 'center',
                 }}>
-                <Text text={'Ignore'} />
+                <Text
+                  text={item.type === 'Ignore' ? 'Ignore' : 'Preview'}
+                  style={{color: COLORS.white, alignSelf: 'center'}}
+                />
               </TouchableOpacity>
+
+              {item.type === 'Clear' && (
+                <TouchableOpacity
+                  style={{
+                    backgroundColor: '#8B9AB7',
+                    height: 30,
+                    marginRight: 10,
+                    width: 110,
+                    justifyContent: 'center',
+                  }}>
+                  <Text
+                    text={'Clear'}
+                    style={{
+                      color: COLORS.white,
+                      alignSelf: 'center',
+                    }}
+                  />
+                </TouchableOpacity>
+              )}
             </View>
           </View>
         )}

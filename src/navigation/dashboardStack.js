@@ -13,6 +13,8 @@ import ForumDetails from '../screens/ForumDetails';
 import Forms from '../screens/Forms';
 import QuestionarieForm from '../screens/QuestionarieForm';
 import Clients from '../screens/Clients';
+import LawyerUnverifiedProfile from '../screens/lawyerUnverified';
+import LawyerVerifiedProfile from '../screens/lawyerVarified';
 const DashBoardStack = () => {
   const Stack = createStackNavigator();
   return (
@@ -32,6 +34,14 @@ const DashBoardStack = () => {
       <Stack.Screen name="Forms" component={Forms} />
       <Stack.Screen name="QuestionarieForm" component={QuestionarieForm} />
       <Stack.Screen name="Clients" component={Clients} />
+      <Stack.Screen
+        name="LawyerVerifiedProfile"
+        component={LawyerVerifiedProfile}
+      />
+      <Stack.Screen
+        name="LawyerUnverifiedProfile"
+        component={LawyerUnverifiedProfile}
+      />
     </Stack.Navigator>
   );
 };
