@@ -31,27 +31,33 @@ const Clients = ({navigation}) => {
           showsVerticalScrollIndicator={false}
           data={FormsData}
           renderItem={({item, ind}) => (
-            <View key={item} style={styles.container}>
-              <Image source={item.image} style={styles.profile} />
-              <View style={{paddingRight: 30}}>
-                <Text text={item.name} style={[styles.title]} />
-                <Text
-                  text={item.level}
-                  style={{color: '#E29F22', ...FONTS.Regular13}}
-                />
+            <TouchableOpacity onPress={() => setModalVisible(true)}>
+              <View key={item} style={styles.container}>
+                <Image source={item.image} style={styles.profile} />
+                <View style={{paddingRight: 30}}>
+                  <Text text={item.name} style={[styles.title]} />
+                  <Text
+                    text={item.level}
+                    style={{color: '#E29F22', ...FONTS.Regular13}}
+                  />
+                </View>
+                <View style={{paddingRight: 10}}>
+                  <TouchableOpacity
+                    onPress={() => {
+                      navigation.navigate('Chat', {
+                        data: item,
+                      });
+                    }}
+                    style={[styles.btn]}>
+                    <Text text={'Message'} style={{color: COLORS.white}} />
+                  </TouchableOpacity>
+                </View>
               </View>
-              <View style={{paddingRight: 10}}>
-                <TouchableOpacity
-                  onPress={() => setModalVisible(true)}
-                  style={[styles.btn]}>
-                  <Text text={'Message'} style={{color: COLORS.white}} />
-                </TouchableOpacity>
-              </View>
-            </View>
+            </TouchableOpacity>
           )}
         />
       </View>
-      <Modal transparent={true} visible={modalVisible}>
+      <Modal transparent={true} animationType={'slide'} visible={modalVisible}>
         <View style={styles.centeredView}>
           <View style={styles.modalView}>
             <ImageBackground source={images.logo_2} style={{flex: 1}}>

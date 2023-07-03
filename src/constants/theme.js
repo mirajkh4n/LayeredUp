@@ -89,13 +89,18 @@ export const FONTS = {
   Medium11: {
     fontFamily: 'Inter-Medium',
     fontSize: RFValue(SIZES.h11),
-  }, Medium15: {
+  },
+  Medium15: {
     fontFamily: 'Inter-Medium',
     fontSize: RFValue(SIZES.h15),
   },
   Medium18: {
     fontFamily: 'Inter-Medium',
     fontSize: RFValue(SIZES.h18),
+  },
+  Medium22: {
+    fontFamily: 'Inter-Medium',
+    fontSize: RFValue(SIZES.h22),
   },
 
   //SemiBold
@@ -112,6 +117,10 @@ export const FONTS = {
   Bold11: {
     fontFamily: 'Inter-Bold',
     fontSize: RFValue(SIZES.h11),
+  },
+  Bold12: {
+    fontFamily: 'Inter-Bold',
+    fontSize: RFValue(SIZES.h12),
   },
   Bold14: {
     fontFamily: 'Inter-Bold',
@@ -136,6 +145,10 @@ export const FONTS = {
   Bold25: {
     fontFamily: 'Inter-Bold',
     fontSize: RFValue(SIZES.h25),
+  },
+  Bold30: {
+    fontFamily: 'Inter-Bold',
+    fontSize: RFValue(SIZES.h30),
   },
 
   // light

@@ -10,7 +10,6 @@ import React, {useContext} from 'react';
 import {COLORS, FONTS} from '../constants';
 import images from '../constants/images';
 import {AuthContext} from '../navigation/AuthProvider';
-import edit_profileIcon from '../assets/icons/edit_profile-icon';
 
 export default function CustomDrawer(props) {
   const {logout, user} = useContext(AuthContext);
@@ -63,7 +62,7 @@ export default function CustomDrawer(props) {
     {
       title: 'My Subscriptions',
       icon: images.Subscriptions,
-      goto: () => props.navigation.navigate('My Subscriptions'),
+      goto: () => props.navigation.navigate('Subscription'),
     },
     {
       title: 'Explore',
@@ -77,15 +76,8 @@ export default function CustomDrawer(props) {
     },
     {
       title: 'Settings',
-      // icon: images.,
       goto: () => props.navigation.navigate('Settings'),
     },
-    // {
-    //   title: 'Logout',
-    //   goto: () => {
-    //     logOut();
-    //   },
-    // },
   ];
 
   return (
@@ -95,7 +87,6 @@ export default function CustomDrawer(props) {
         flex: 1,
       }}>
       <View style={{flex: 0.2, backgroundColor: '#151E2F', paddingTop: 15}}>
-        {/* <View style={{alignSelf: 'flex-end'}}></View> */}
         <View style={{flexDirection: 'row', alignItems: 'center'}}>
           <Image
             source={images.lawyer_profile}

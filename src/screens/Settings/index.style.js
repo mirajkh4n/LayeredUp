@@ -7,7 +7,7 @@ export const styles = StyleSheet.create({
     justifyContent: 'space-between',
     paddingVertical: 20,
   },
-  logoutBtn:{
+  logoutBtn: {
     flexDirection: 'row',
     alignItems: 'center',
     paddingVertical: 50,
@@ -17,9 +17,11 @@ export const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     marginTop: 22,
+    backgroundColor: COLORS.primary,
+    opacity: 0.9,
   },
   modalView: {
-    height: '30%',
+    height: '50%',
     width: '90%',
     backgroundColor: 'white',
     alignItems: 'center',
@@ -31,6 +33,4 @@ export const styles = StyleSheet.create({
     justifyContent: 'center',
     backgroundColor: COLORS.primary,
   },
-
-  
 });

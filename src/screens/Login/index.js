@@ -7,6 +7,8 @@ import {SIZES} from '../../constants';
 import {styles} from './index.style';
 
 const Login = ({navigation}) => {
+  const data = [{rol: 'Client'}, {rol: 'Lawyer'}, {rol: 'LawFirm'}];
+
   return (
     <Container scroll={true}>
       <View style={styles.container}>
@@ -24,10 +26,14 @@ const Login = ({navigation}) => {
           onPress={() => navigation.navigate('SignIn')}>
           <CustomText text={'Client'} style={styles.btnText} />
         </TouchableOpacity>
-        <TouchableOpacity style={[styles.btn, {marginTop: SIZES.padding * 2}]}>
+        <TouchableOpacity
+          onPress={() => navigation.navigate('SignIn')}
+          style={[styles.btn, {marginTop: SIZES.padding * 2}]}>
           <CustomText text={'Lawyer'} style={styles.btnText} />
         </TouchableOpacity>
-        <TouchableOpacity style={[styles.btn, {marginTop: SIZES.padding * 2}]}>
+        <TouchableOpacity
+          onPress={() => navigation.navigate('SignIn')}
+          style={[styles.btn, {marginTop: SIZES.padding * 2}]}>
           <CustomText text={'Law Firm'} style={styles.btnText} />
         </TouchableOpacity>
       </ImageBackground>

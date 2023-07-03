@@ -197,7 +197,7 @@ const Home = ({navigation}) => {
                 />
                 <Text text={item.description} />
                 <TouchableOpacity
-                  onPress={() => navigation.navigate('Forum')}
+                  onPress={() => navigation.navigate('Profile')}
                   style={{
                     height: 37,
                     width: 85,

@@ -15,6 +15,10 @@ import QuestionarieForm from '../screens/QuestionarieForm';
 import Clients from '../screens/Clients';
 import LawyerUnverifiedProfile from '../screens/lawyerUnverified';
 import LawyerVerifiedProfile from '../screens/lawyerVarified';
+import Subscription from '../screens/subscription';
+import QuestionarieCreateForm from '../screens/QuestionarieCreateForm';
+import Chat from '../screens/Chat';
+import Profile from '../screens/profile';
 const DashBoardStack = () => {
   const Stack = createStackNavigator();
   return (
@@ -32,6 +36,7 @@ const DashBoardStack = () => {
       <Stack.Screen name="Forum" component={Forum} />
       <Stack.Screen name="ForumDetails" component={ForumDetails} />
       <Stack.Screen name="Forms" component={Forms} />
+      <Stack.Screen name="Profile" component={Profile} />
       <Stack.Screen name="QuestionarieForm" component={QuestionarieForm} />
       <Stack.Screen name="Clients" component={Clients} />
       <Stack.Screen
@@ -41,6 +46,11 @@ const DashBoardStack = () => {
       <Stack.Screen
         name="LawyerUnverifiedProfile"
         component={LawyerUnverifiedProfile}
+      />
+      <Stack.Screen name="Subscription" component={Subscription} />
+      <Stack.Screen
+        name="QuestionarieCreateForm"
+        component={QuestionarieCreateForm}
       />
     </Stack.Navigator>
   );

@@ -1,5 +1,6 @@
-import React from 'react';
-import {View, FlatList, TouchableOpacity} from 'react-native';
+import React, {useState} from 'react';
+import {View, FlatList, TouchableOpacity, Modal} from 'react-native';
+import cancel_icon from '../../assets/icons/cancel_icon';
 import client_forms_icon from '../../assets/icons/client_forms_icon';
 import explore_icon from '../../assets/icons/explore_icon';
 import forum from '../../assets/icons/forum';
@@ -13,8 +14,13 @@ import settings_icon from '../../assets/icons/settings_icon';
 import {Container, Icons, Text} from '../../components';
 import MainHeader from '../../components/MainHeader';
 import {styles} from './index.style';
+import {RadioButton} from 'react-native-paper';
+import {COLORS, FONTS} from '../../constants';
 
 const Explore = ({navigation}) => {
+  const [modalVisible, setModalVisible] = useState(false);
+  const [checked, setChecked] = useState(false);
+
   const ExploreData = [
     {
       title: 'Clients Forms',
@@ -24,12 +30,12 @@ const Explore = ({navigation}) => {
     {
       title: 'Manage Services',
       icon: manage_services,
-      goto: () => navigation.navigate('Profile'),
+      goto: () => navigation.navigate(''),
     },
     {
       title: 'Meetings',
       icon: meetings_icon,
-      goto: () => navigation.navigate('Profile'),
+      goto: () => navigation.navigate(''),
     },
     {
       title: 'Lawyer Grid',
@@ -39,7 +45,7 @@ const Explore = ({navigation}) => {
     {
       title: 'My Subscription',
       icon: my_subscription,
-      goto: () => navigation.navigate('Profile'),
+      goto: () => navigation.navigate('Subscription'),
     },
     {
       title: 'Forum',
@@ -49,7 +55,9 @@ const Explore = ({navigation}) => {
     {
       title: 'Explore',
       icon: explore_icon,
-      goto: () => navigation.navigate('Home'),
+      goto: () => {
+        navigation.navigate('Home');
+      },
     },
     {
       title: 'Setting',
@@ -64,7 +72,9 @@ const Explore = ({navigation}) => {
     {
       title: 'Questionarie',
       icon: questionire_icon,
-      goto: () => navigation.navigate('QuestionarieForm'),
+      goto: () => {
+        setModalVisible(true);
+      },
     },
   ];
   return (
@@ -90,12 +100,91 @@ const Explore = ({navigation}) => {
               <Icons name={item.icon} />
               <Text
                 text={item.title}
-                style={[styles.title, {textAlign: 'center',paddingTop:10}]}
+                style={[styles.title, {textAlign: 'center', paddingTop: 10}]}
               />
             </TouchableOpacity>
           )}
         />
       </View>
+      <Modal transparent={true} visible={modalVisible}>
+        <View style={styles.centeredView}>
+          <View style={styles.modalView}>
+            <TouchableOpacity
+              style={{
+                padding: 10,
+                alignSelf: 'flex-end',
+              }}
+              onPress={() => setModalVisible(!modalVisible)}>
+              <Icons name={cancel_icon} />
+            </TouchableOpacity>
+            <Text
+              text={'Select Your Doc'}
+              style={{color: COLORS.black, ...FONTS.Medium22}}
+            />
+            <View
+              style={{
+                alignItems: 'flex-start',
+                width: '80%',
+                padding: 10,
+                paddingTop: 25,
+              }}>
+              <View style={{flexDirection: 'row'}}>
+                <RadioButton
+                  color={COLORS.secondary}
+                  uncheckedColor={COLORS.secondary}
+                  value="ExistingForm"
+                  status={checked === 'ExistingForm' ? 'checked' : 'unchecked'}
+                  onPress={() => setChecked('ExistingForm')}
+                />
+                <Text
+                  text={'Select Existing Form'}
+                  style={{color: COLORS.black, ...FONTS.Regular15}}
+                />
+              </View>
+              <View style={{flexDirection: 'row'}}>
+                <RadioButton
+                  color={COLORS.secondary}
+                  uncheckedColor={COLORS.secondary}
+                  value="QuestionarieForm"
+                  status={
+                    checked === 'QuestionarieForm' ? 'checked' : 'unchecked'
+                  }
+                  onPress={() => {
+                    setChecked('QuestionarieForm'),
+                      navigation.navigate('QuestionarieForm');
+                    setModalVisible(!modalVisible);
+                  }}
+                />
+                <Text
+                  text={'Upload Form'}
+                  style={{color: COLORS.black, ...FONTS.Regular15}}
+                />
+              </View>
+              <View style={{flexDirection: 'row'}}>
+                <RadioButton
+                  color={COLORS.secondary}
+                  uncheckedColor={COLORS.secondary}
+                  value={'QuestionarieCreateForm'}
+                  status={
+                    checked === 'QuestionarieCreateForm'
+                      ? 'checked'
+                      : 'unchecked'
+                  }
+                  onPress={() => {
+                    setChecked('QuestionarieCreateForm');
+                    navigation.navigate('QuestionarieCreateForm');
+                    setModalVisible(!modalVisible);
+                  }}
+                />
+                <Text
+                  text={'Create Questionaire'}
+                  style={{color: COLORS.black, ...FONTS.Regular15}}
+                />
+              </View>
+            </View>
+          </View>
+        </View>
+      </Modal>
     </Container>
   );
 };

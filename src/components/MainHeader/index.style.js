@@ -4,7 +4,7 @@ import {COLORS, FONTS, SIZES} from '../../constants';
 export const styles = StyleSheet.create({
   main_view: {
     backgroundColor: COLORS.primary,
-    height: 186,
+    height: 146,
     paddingTop: SIZES.padding * 2,
     flexDirection: 'row',
     justifyContent: 'space-between',

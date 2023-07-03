@@ -24,6 +24,7 @@ const MainHeader = ({
   customStyle,
   isPlusIcon = false,
   isTopic,
+  placeholder,
 }) => {
   return (
     <>
@@ -123,7 +124,7 @@ const MainHeader = ({
             }}>
             <TextInput
               style={{width: '85%', paddingLeft: 20}}
-              placeholder="Explore Categories"></TextInput>
+              placeholder={placeholder}></TextInput>
             <Icons name={search_icon} style={{paddingLeft: 15}} />
           </View>
         )}

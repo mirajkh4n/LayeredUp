@@ -35,6 +35,7 @@ import forum_top_icon from '../assets/images/forum_top_icon.png';
 import minus_icon from '../assets/images/minus_icon.png';
 import formdp from '../assets/images/formdp.png';
 import lawyerProfileAvatar from '../assets/images/lawyerProfileAvatar.png';
+import subscription_background from '../assets/images/subscription_background.png';
 
 export default {
   chat,
@@ -74,4 +75,5 @@ export default {
   minus_icon,
   formdp,
   lawyerProfileAvatar,
+  subscription_background,
 };
